@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" id="about">
     <div class="about__item">
       <div v-for="(n,index) in itemlist" :key="n.key" class="about__item__nav" :class="index === currentIndex? 'active': ''" @click="handleChange(index)">{{ n.title }}</div>
     </div>
@@ -42,7 +42,7 @@ export default {
         },
         {
           title: '版权说明',
-          info: `非常感谢您对我们的网站感兴趣并访问我们的网站。在您使用本网站之前，请您仔细阅读本声明的所有条款。您一旦链接、使用本网站，即表示您无条件地接受本声明，您应该罪受本声明的相关法律规定。`,
+          info: `非常感谢您对我们的网站感兴趣并访问我们的网站。在您使用本网站之前，请您仔细阅读本声明的所有条款。您一旦链接、使用本网站，即表示您无条件地接受本声明，您应该接受本声明的相关法律规定。`,
           list: [
             `1. 本公司网站保留所有的权利：所有的文字，图片，有声文件，动画文件，和其他知识产权均受中国包括著作权法在内的所有相关工业产权和知识产权保护。不可复制用于商业目的或发行，也不可修改后在其他网站使用。`,
             `2. 本网站中出现的所有商标、标识和服务标识的所有权均归本公司网站。未经本公司网站司的书面许可，禁止将其以任何方式使用、永久下载、复制、分发。`,
@@ -155,12 +155,12 @@ export default {
       font-size 14px
     &__msg
       margin 20px 0
-      display inline-block
+      display block
       font-size 16px
       img
         margin 0 35px
 .proimglist
-    display inline-block
+    // display inline-block
     margin 20px
     //  margin 0 35px
 // .proimglist:nth-child(3)>img
@@ -190,7 +190,7 @@ export default {
   font-size: 14px;
 .introduceCompany__desc__msg
   margin 20px 0
-  display inline-block
+  // display inline-block
   font-size 16px
   line-height: 2em;
   word-break: break-all;

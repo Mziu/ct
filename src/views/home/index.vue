@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div id="swiper1">
+    <div id="swiper">
       <div class="swiper-container">
   　　  <div class="swiper-wrapper">
   <!-- 　　　　 <div class="swiper-slide" data-swiper-autoplay="5000" v-for="(item, index) in 8" :style="{backgroundImage: 'url('+domain+'banner-0'+(index+1)+'.png)'}" :key="item.key"> -->
-  　　　　 <div class="swiper-slide" data-swiper-autoplay="5000" v-for="(item, index) in 13" :key="item.key">
-            <img :src="domain+'banner-0'+(index+1)+'.png'" class="bannerimg" alt=""  oncontextmenu="return false" ondragstart="return false">
+  　　　　 <div class="swiper-slide" v-for="(item, index) in 13" :key="item.key">
+            <img :src="'http://chituo.santo-archi.com/'+'banner-0'+(index+1)+'.png'" style="opacity: 1;" class="bannerimg" alt=""  oncontextmenu="return false" ondragstart="return false">
           </div>
   　　　</div>
       <!-- <div class="swiper-button-prev"></div>
@@ -68,10 +68,14 @@ export default {
     ...mapGetters(['getBuildingList'])
   },
   mounted () {
-    var swiper1 = new Swiper("#swiper1 .swiper-container", {
-      autoplay: true, //  自动播放
+    var swiper = new Swiper(".swiper-container", {
+      autoplay: {
+        disableOnInteraction: false,
+        delay: 3000,
+        stopOnLastSlide: false,
+      },
       speed: 1000, //  切换速度
-      effect: 'slide', //  切换效果:渐隐
+      // effect: 'slide', //  切换效果:渐隐
       grabCursor: true, //  鼠标经过切换为小手
       loop: true, //  循环
       pagination: {
@@ -80,21 +84,7 @@ export default {
         clickable :true,
       },
 　　})
-    this.swiper2 = new Swiper("#swiper2 .swiper-container", {
-      autoplay: true, //  自动播放
-      // speed: 500, //  切换速度
-      slidesPerView : 3,
-      centeredSlides : true,
-      // effect: 'slide', //  切换效果:渐隐
-      // grabCursor: true, //  鼠标经过切换为小手
-      loop: true, //  循环
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   bulletActiveClass: 'my-bullet-active',
-      //   clickable :true,
-      // },
-　　})
-this.domain = utils.domain
+    this.domain = utils.domain
   },
   beforeMount () {
     let info = `Ｃｈì ｙú ｘīｎ . Ｔｕò ｙú ｘíｎｇ`
@@ -138,8 +128,9 @@ this.domain = utils.domain
 <style lang="stylus">
 .bannerimg
   width 100%
+  opacity 1
   // height 1366px
-#swiper1
+#swiper
   .swiper-pagination-bullet
     width 16px
     height 16px
@@ -156,33 +147,6 @@ this.domain = utils.domain
     background-size 100% 100%
     width 100%
     height auto
-#swiper2
-  margin-top 100px
-  .swiper-pagination-bullet
-    width 16px
-    height 16px
-    margin 0 5px
-    opacity 0.5
-  .my-bullet-active
-    background-color #ececea
-    opacity 1
-  .swiper-container
-    height 380px
-    // width 700px
-    overflow visible !important
-  .swiper-slide
-    -webkit-background-size 100% 100%
-    background-size 100% 100%
-    position relative
-    margin 0 10px
-    width 700px !important
-    .title
-      position absolute
-      bottom -50px
-      width 100%
-      font-size 18px
-      text-align center
-
 #chituo //  炽于心，拓于行
   margin 120px auto
   text-align center

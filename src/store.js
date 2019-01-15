@@ -95,7 +95,7 @@ export default new Vuex.Store({
     ],
     designCityList: [ //  城市设计
       {
-        title: '巢州忆园概念规划设计',
+        title: '巢州忆园概念规划项目',
         img: `${domain}xm-24.png?imageslim`,
         path: 'detail',
         xm: 2, //  模块
@@ -103,7 +103,7 @@ export default new Vuex.Store({
         num: 4 // 图片数量
       },
       {
-        title: '襄阳长寿岛概念规划',
+        title: '襄阳长寿岛概念规划项目',
         img: `${domain}xm-25.png?imageslim`,
         path: 'detail',
         xm: 2, //  模块
@@ -111,7 +111,7 @@ export default new Vuex.Store({
         num: 3 // 图片数量
       },
       {
-        title: '雪融谷大目湾生命健康项目概念规划',
+        title: '雪融谷大目湾生命健康项目',
         img: `${domain}xm-26.png?imageslim`,
         path: 'detail',
         xm: 2, //  模块
@@ -120,49 +120,8 @@ export default new Vuex.Store({
       },
     ],
     publicBuildList: [
-     
       {
-        title: '海南香格里拉酒店概念设计',
-        img: `${domain}xm-15.png?imageslim`,
-        path: 'detail',
-        xm: 1, //  模块
-        xmnum: 0, //  项目分类
-        num: 4 // 图片数量
-      },
-      {
-        title: '柬埔寨西哈努克度假酒店',
-        img: `${domain}xm-16.png?imageslim`,
-        path: 'detail',
-        xm: 1, //  模块
-        xmnum: 1, //  项目分类
-        num: 7 // 图片数量
-      },
-      {
-        title: '江苏苏奥电商产业园',
-        img: `${domain}xm-17.png?imageslim`,
-        path: 'detail',
-        xm: 1, //  模块
-        xmnum: 2, //  项目分类
-        num: 10 // 图片数量
-      },
-      {
-        title: '山东绮丽创谷产业园',
-        img: `${domain}xm-18.png?imageslim`,
-        path: 'detail',
-        xm: 1, //  模块
-        xmnum: 3, //  项目分类
-        num: 6 // 图片数量
-      },
-      {
-        title: '珠海联合赛尔产业园',
-        img: `${domain}xm-19.png?imageslim`,
-        path: 'detail',
-        xm: 1, //  模块
-        xmnum: 4, //  项目分类
-        num: 7 // 图片数量
-      },
-      {
-        title: '东阳建筑博物馆(个人业绩)',
+        title: '东阳建筑博物馆项目(个人业绩)',
         img: `${domain}xm-20.png?imageslim`,
         path: 'detail',
         xm: 1, //  模块
@@ -170,7 +129,7 @@ export default new Vuex.Store({
         num: 4 // 图片数量
       },
       {
-        title: '恒大海花岛(个人业绩)',
+        title: '恒大海花岛项目(个人业绩)',
         img: `${domain}xm-21.png?imageslim`,
         path: 'detail',
         xm: 1, //  模块
@@ -178,7 +137,7 @@ export default new Vuex.Store({
         num: 9 // 图片数量
       },
       {
-        title: '新城-青岛山大产业园',
+        title: '新城-青岛山大产业园项目',
         img: `${domain}xm-22.png?imageslim`,
         path: 'detail',
         xm: 1, //  模块
@@ -186,17 +145,57 @@ export default new Vuex.Store({
         num: 7 // 图片数量
       },
       {
-        title: '中国农业科学院合肥食品创新研究院项目规划设计',
+        title: '海南香格里拉酒店概念设计项目',
+        img: `${domain}xm-15.png?imageslim`,
+        path: 'detail',
+        xm: 1, //  模块
+        xmnum: 0, //  项目分类
+        num: 4 // 图片数量
+      },
+      {
+        title: '柬埔寨西哈努克度假酒店项目',
+        img: `${domain}xm-16.png?imageslim`,
+        path: 'detail',
+        xm: 1, //  模块
+        xmnum: 1, //  项目分类
+        num: 7 // 图片数量
+      },
+      {
+        title: '江苏苏奥电商产业园项目',
+        img: `${domain}xm-17.png?imageslim`,
+        path: 'detail',
+        xm: 1, //  模块
+        xmnum: 2, //  项目分类
+        num: 10 // 图片数量
+      },
+      {
+        title: '山东绮丽创谷产业园项目',
+        img: `${domain}xm-18.png?imageslim`,
+        path: 'detail',
+        xm: 1, //  模块
+        xmnum: 3, //  项目分类
+        num: 6 // 图片数量
+      },
+      {
+        title: '珠海联合赛尔产业园项目',
         img: `${domain}xm-23.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
         xmnum: 8, //  项目分类
+        num: 6 // 图片数量
+      },
+      {
+        title: '中国农业科学院合肥食品创新研究院项目',
+        img: `${domain}xm-19.png?imageslim`,
+        path: 'detail',
+        xm: 1, //  模块
+        xmnum: 4, //  项目分类
         num: 7 // 图片数量
       },
     ],
     buildingList: [
       {
-        title: '建发福州央玺',
+        title: '建发福州央玺项目',
         img: `${domain}xm-01.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
@@ -220,81 +219,79 @@ export default new Vuex.Store({
         num: 7 // 图片数量
       },
       {
-        title: '大唐漳州角美项目',
+        title: '建发杭州三墩北项目',
         img: `${domain}xm-04.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
         xmnum: 3, //  项目分类
-        num: 5 // 图片数量
-      },
-      {
-        title: '建发杭州三墩北项目',
-        img: `${domain}xm-05.png?imageslim`,
-        path: 'detail',
-        xm: 0, //  模块
-        xmnum: 4, //  项目分类
         num: 13 // 图片数量
       },
       {
         title: '建发建阳项目',
+        img: `${domain}xm-05.png?imageslim`,
+        path: 'detail',
+        xm: 0, //  模块
+        xmnum: 4, //  项目分类
+        num: 11 // 图片数量
+      },
+      {
+        title: '建发金茂武汉P66项目',
         img: `${domain}xm-06.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
         xmnum: 5, //  项目分类
-        num: 11 // 图片数量
-      },
-      {
-        title: '建发金茂武汉P66',
-        img: `${domain}xm-07.png?imageslim`,
-        path: 'detail',
-        xm: 0, //  模块
-        xmnum: 6, //  项目分类
         num: 7 // 图片数量
       },
       {
         title: '建发厦门薛岭项目',
+        img: `${domain}xm-07.png?imageslim`,
+        path: 'detail',
+        xm: 0, //  模块
+        xmnum: 6, //  项目分类
+        num: 18 // 图片数量
+      },
+      {
+        title: '建发太仓项目',
         img: `${domain}xm-08.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
         xmnum: 7, //  项目分类
-        num: 11 // 图片数量
+        num: 12 // 图片数量
       },
       {
-        title: '建发太仓项目',
+        title: '建发武汉花山项目',
         img: `${domain}xm-09.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
         xmnum: 8, //  项目分类
-        num: 18 // 图片数量
-      },
-      {
-        title: '建发武汉花山项目',
-        img: `${domain}xm-10.png?imageslim`,
-        path: 'detail',
-        xm: 0, //  模块
-        xmnum: 9, //  项目分类
         num: 22 // 图片数量
       },
       {
         title: '建发张家港项目',
-        img: `${domain}xm-11.png?imageslim`,
+        img: `${domain}xm-10.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
-        xmnum: 10, //  项目分类
+        xmnum: 9, //  项目分类
         num: 13 // 图片数量
       },
       {
         title: '朗诗亨通吴江项目',
+        img: `${domain}xm-11.png?imageslim`,
+        path: 'detail',
+        xm: 0, //  模块
+        xmnum: 10, //  项目分类
+        num: 18 // 图片数量
+      },
+      {
+        title: '大唐漳州角美项目',
         img: `${domain}xm-12.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
         xmnum: 11, //  项目分类
-        num: 18 // 图片数量
+        num: 5 // 图片数量
       },
-     
-      
       {
-        title: '芜湖世茂健康小镇',
+        title: '芜湖世茂健康小镇项目',
         img: `${domain}xm-13.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
@@ -302,7 +299,7 @@ export default new Vuex.Store({
         num: 3 // 图片数量
       },
       {
-        title: '雅居乐-漳州',
+        title: '雅居乐-漳州项目',
         img: `${domain}xm-14.png?imageslim`,
         path: 'detail',
         xm: 0, //  模块
