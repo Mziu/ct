@@ -85,6 +85,7 @@ export default {
       },
 　　})
     this.domain = utils.domain
+    console.log("*** 如果想要解决团队跳转至底的问题， 将组件代码复制并插入到首页相应位置即可。 ***")
   },
   beforeMount () {
     let info = `Ｃｈì ｙú ｘīｎ . Ｔｕò ｙú ｘíｎｇ`

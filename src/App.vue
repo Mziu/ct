@@ -121,7 +121,7 @@ export default {
   -moz-osx-font-smoothing grayscale
   color #2c3e50
 .navi
-  padding-top 40px
+  // padding-top 40px
   background-color #fff
 .nav_nav
   width 1400px
@@ -129,6 +129,7 @@ export default {
   line-height 2em
   margin 0px auto
   cursor pointer
+  padding 20px 0
 .nav
   position absolute
   top 0

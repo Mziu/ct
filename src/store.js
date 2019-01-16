@@ -180,17 +180,18 @@ export default new Vuex.Store({
         title: '珠海联合赛尔产业园项目',
         img: `${domain}xm-23.png?imageslim`,
         path: 'detail',
-        xm: 0, //  模块
-        xmnum: 8, //  项目分类
-        num: 6 // 图片数量
+        xm: 1, //  模块
+        xmnum: 4, //  项目分类
+        num: 7 // 图片数量
       },
       {
         title: '中国农业科学院合肥食品创新研究院项目',
         img: `${domain}xm-19.png?imageslim`,
         path: 'detail',
-        xm: 1, //  模块
-        xmnum: 4, //  项目分类
-        num: 7 // 图片数量
+        xm: 0, //  模块
+        xmnum: 8, //  项目分类selectedOptions: [],
+        options: [],
+        num: 6 // 图片数量
       },
     ],
     buildingList: [
@@ -272,7 +273,7 @@ export default new Vuex.Store({
         path: 'detail',
         xm: 0, //  模块
         xmnum: 9, //  项目分类
-        num: 13 // 图片数量
+        num: 14 // 图片数量
       },
       {
         title: '朗诗亨通吴江项目',
